@@ -1,6 +1,7 @@
-# Ponto_Format
-# Adição de 'Ponto e Vírgula' e 'Aspas e Vírgula'
-# em um conjunto de caracteres copiados do excel
-# ou de alguma grade de bando de dados.
-#
-# By @Lucas Vitor.
+# Ponto Format
+
+Application for adding 'Semicolon' and 'Quotation marks and commas'
+in a character set copied from excel
+or some database grid.
+
+
