@@ -10,6 +10,8 @@ import PySimpleGUI as sg
 import subprocess as sp
 import functions as f
 
+var = []
+reset = 0
 
 # Comando para fechar o cmd assim que abrir o executavel!
 sp.Popen('cmd', shell=True)
@@ -20,9 +22,9 @@ sg.theme('BrownBlue')
 # Layout da janela
 layout = [
     [sg.Frame(layout=[
-        [sg.Checkbox('Aspas e Vírgula', key='aspas_virgula'), sg.T(' ' * 16),
-         sg.Checkbox('Ponto e Vírgula', key='ponto_virgula'), sg.T(' ' * 16),
-         sg.Checkbox('Soma Meta', key='soma_meta'), sg.T(' ' * 4),
+        [sg.Checkbox('Aspas e Vírgula', key='aspas_virgula'), sg.T(' ' * 12),
+         sg.Checkbox('Ponto e Vírgula', key='ponto_virgula'), sg.T(' ' * 12),
+         sg.Checkbox('Soma Meta', key='soma_meta'), sg.T('   Meta:'),
          sg.Input(size=(8, 1), key='entrada_meta', font=('', 9))]],
         title='Opções de Formatação', title_color='Orange', relief=sg.RELIEF_SUNKEN,
         tooltip='Marque a caixa para escolher', font=('', 9, 'italic'))],
@@ -37,8 +39,6 @@ window = sg.Window('Ponto Format', layout, icon=('C:\icon.ico'), disable_close=T
 # Vetores para o tratamento de informação
 vet = []
 vet2 = []
-var = []
-reset = 0
 
 
 # Função para o tratamento dos valores da entrada.
