@@ -133,6 +133,7 @@ def begin(window, reseto):
                                 for m in tes:
                                     print(str(m).replace('.', ','))
                                 n = 0
+                                break
                         array.clear()
                         if test:
                             print('Nenhum Valor encontrado')
