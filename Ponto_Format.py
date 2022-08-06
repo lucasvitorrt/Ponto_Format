@@ -124,7 +124,7 @@ def begin(window, reseto):
                                 array[j][0] = f.ajst[j]
                             for k in range(0, n):
                                 soma = float(soma) + float(array[k][0]) * float(array[k][1])
-                            if soma == meta:
+                            if round(soma, 2) == meta:
                                 test = 0
                                 tes = []
                                 for p in range(0, n):
