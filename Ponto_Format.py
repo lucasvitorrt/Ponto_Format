@@ -73,7 +73,7 @@ def begin(window, reseto):
             reseto = 1
             break
         else:
-            #ASPAS E VÍGULA
+            #ASPAS E VÍRGULA
             if event == 'Processar' and values['aspas_virgula'] is True and values['ponto_virgula'] is False:
                 if str(vet2[0]) != '':
                     j = 0
